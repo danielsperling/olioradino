@@ -1,6 +1,16 @@
 // Specific CSS for your home-page
 
-body {
-  background-color: #f8f8f8 ;
+.background {
+  height: 700px;
+  background-image: url(OliveTrees.jpeg);
+  background-position: center;
+  background-size: 100%;
+}
+
+
+
+h1, p {
+  margin-top: 50px;
+  text-align: center;
 }
 
