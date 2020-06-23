@@ -1,22 +1,52 @@
-li {
-  font-weight: 500;
-  font-size: 20px;
-  color: blue;
+
+
+li, a {
+  font-weight: 1000;
+  text-decoration: none !important;
+  font-size: 25px;
+  color: #0D3B66;
+  padding-top: 15px;
+  padding-right: 20px;
+  font-family: 'Overpass', sans-serif;
 }
+
+a:hover {
+  color: #6FAFEC
+}
+
+.nav {
+  margin-right: 150px;
+}
+
 
 header {
+  min-height: 100px;
   display: flex;
-  justify-content: space-between
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 150px
 }
 
 
-
-
-
-
-
-
-
+// .nan_links li a {
+//   transition
+// }
 
 
 
