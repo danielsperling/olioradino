@@ -1,12 +1,79 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+
+
+li, a {
+  font-weight: 1000;
+  text-decoration: none !important;
+  font-size: 25px;
+  color: #0D3B66;
+  padding-top: 15px;
+  padding-right: 20px;
+  font-family: 'Overpass', sans-serif;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+a:hover {
+  color: #6FAFEC
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav {
+  margin-right: 150px;
 }
+
+
+header {
+  min-height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: auto;
+
+}
+
+.nav_links {
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 150px
+}
+
+
+// .nan_links li a {
+//   transition
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// custom lewagon set up for navbar
+
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
