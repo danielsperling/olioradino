@@ -7,10 +7,29 @@
   background-size: 100%;
 }
 
-
-
 h1, p {
+  margin-top: 50px;
+  text-align: left;
+  font-size: 23px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  color: bla;
+  margin-top: 20px;
+  opacity: 0.5;
   margin-top: 50px;
   text-align: center;
 }
 
+.parag {
+  margin-right: 150px;
+  margin-left: 150px;
+  height: 150px;
+}
