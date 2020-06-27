@@ -9,7 +9,12 @@
 
 .map {
   background-image: url(olivebranch.jpg);
-  height: 200px;
+  height: 300px;
+  background-attachment: fixed;
+  margin-bottom: 70px;
+  background-position: center center;
+  background-size: cover;
+  box-shadow: inset 0 0 1em #111
 }
 
 h1, p {
@@ -36,5 +41,4 @@ h1 {
 .parag {
   margin-right: 150px;
   margin-left: 150px;
-  height: 150px;
 }
