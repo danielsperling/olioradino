@@ -3,11 +3,12 @@
   <%= image_tag "logo.png", alt: "Olio Radino Logo", :class => "logo", width: 200 %>
     <nav>
       <ul class="nav_links">
-        <%= link_to "ABOUT" %>
+        <%= link_to "HOME" %>
         <%= link_to "PRODUCTS" %>
         <%= link_to "CONTACT US" %>
-        <%= link_to "LANGUAGE" %>
-        <div class="dropdown">
+      </ul>
+    </nav>
+        <div class="nav_links">
           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             LANGUAGE
           </button>
@@ -18,6 +19,4 @@
             <a class="dropdown-item" href="#">Italian</a>
           </div>
         </div>
-      </ul>
-    </nav>
 </header>

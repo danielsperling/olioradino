@@ -1,6 +1,4 @@
-.dropdown {
-  justify-content: flex-end;
-}
+
 
 li, a {
   font-weight: 1000;
@@ -29,7 +27,6 @@ header {
 
 .nav_links {
   list-style: none;
-  margin-right: 100px;
 }
 
 .nav_links li {
@@ -40,6 +37,11 @@ header {
 .logo {
   margin-right: auto;
   margin-left: 150px
+}
+
+.btn {
+    margin-right: 100px;
+
 }
 
 
