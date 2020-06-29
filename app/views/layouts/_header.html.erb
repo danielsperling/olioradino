@@ -3,9 +3,10 @@
   <%= image_tag "logo.png", alt: "Olio Radino Logo", :class => "logo", width: 200 %>
     <nav>
       <ul class="nav_links">
-        <%= link_to "HOME" %>
-        <%= link_to "PRODUCTS" %>
-        <%= link_to "CONTACT US" %>
+        <%= link_to "HOME", root_path %>
+        <%= link_to "ABOUT US", about_path %>
+        <%= link_to "PRODUCTS", products_path %>
+        <%= link_to "CONTACT US", contact_path %>
       </ul>
     </nav>
         <div class="nav_links">
