@@ -2,13 +2,13 @@
 
 .background {
   height: 700px;
-  background-image: url("OliveTrees.jpeg");
+  background: image_url("OliveTrees.jpeg");
   background-position: center;
   background-size: 100%;
 }
 
 .map {
-  background-image: url("olivebranch.jpg");
+  background: image_url("olivebranch.jpg");
   height: 300px;
   background-attachment: fixed;
   margin-bottom: 70px;
