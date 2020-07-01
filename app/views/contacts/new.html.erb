@@ -1,6 +1,4 @@
-<h1> Hello </h1>
-
-<div class="container">
+<div class="message">
 
     <%= form_for @contact do |f| %>
     <%= f.label :name  %> <br>
@@ -22,27 +20,7 @@
       <%= f.text_field :nickname, hint: 'leave this field blank' %>
     </div>
 
-    <%= f.submit "Send Message", class: "btn btn-primary"  %>
+    <%= f.submit "Send Message", class: "btn btn-default"  %>
   <% end %>
 
 </div>
-
-
-
-<!--
-<label>Name</label> <br>
-  <input type="text">
-
-  <br>
-
-  <label>Email</label><br>
-  <input type="text">
-
-  <br>
-
-  <label>Message</label><br>
-  <textarea cols="60" rows="10"></textarea>
-
-  <br>
-
-  <input type="submit" value="Send Message" class="button"> -->
