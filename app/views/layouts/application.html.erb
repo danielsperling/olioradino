@@ -8,6 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -25,12 +27,20 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
+    <%= javascript_include_tag 'application' %>
+    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_pack_tag 'map' %>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
+
   </head>
 
   <body>
-  <%= render "layouts/header"  %>
-    <%= yield %>
-  <%= render "layouts/footer"  %>
-  </body>
+    <%= render "layouts/header"  %>
+      <%= yield %>
+    <%= render "layouts/footer"  %>
+
+   </body>
 
 </html>
