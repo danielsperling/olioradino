@@ -24,15 +24,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <!-- Mapbox -->
+    <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
+    <link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-    <%= javascript_include_tag 'application' %>
-    <%= javascript_include_tag 'application' %>
+
+    <!-- Mapbox -->
     <%= stylesheet_pack_tag 'map' %>
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.45.0/mapbox-gl.js'></script>
 
   </head>
 
@@ -40,7 +43,6 @@
     <%= render "layouts/header"  %>
       <%= yield %>
     <%= render "layouts/footer"  %>
-
    </body>
 
 </html>
