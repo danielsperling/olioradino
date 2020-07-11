@@ -18,9 +18,13 @@ h5 {
 .containercontact {
   display: flex;
 
+
 }
 
 .position  {
   margin-top: 300px;
+}
 
+#map {
+  z-index:0;
 }
