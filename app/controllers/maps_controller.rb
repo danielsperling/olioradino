@@ -1,4 +1,4 @@
-class FlatsController < ApplicationController
+class MapsController < ApplicationController
   def index
     @maps = Map.geocoded # returns flats with coordinates
 
