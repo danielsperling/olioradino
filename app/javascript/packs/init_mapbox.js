@@ -8,6 +8,14 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/danielsperling/ckcf4r1dn17kd1inyikg0gzth'
+
+    });
+    const markers = JSON.parse(mapElement.dataset.markers);
+
+    markers.forEach((marker) => {
+      new mapboxgl.Marker()
+        .setLngLat([ marker.lng, marker.lat ])
+        .addTo(map);
     });
   }
 };
