@@ -17,22 +17,18 @@ h5 {
 
 .containercontact {
   display: flex;
+  z-index:1;
 
 
 }
 
 .position  {
   margin-top: 300px;
+
+
 }
 
 #map {
-  z-index:0;
 }
 
-.mapboxgl-marker {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border:1px solid gray;
-    background-color:lightblue;
-}
+
