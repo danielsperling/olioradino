@@ -1,3 +1,6 @@
+import { initMapbox } from 'packs/init_mapbox';
+
+
 /* eslint no-console:0 */
 // This file is automatically compiled by Webpack, along with any other files
 // present in this directory. You're encouraged to place your actual application logic in
@@ -17,3 +20,7 @@
 
 console.log('Hello World from Webpacker')
 
+
+document.addEventListener('turbolinks:load', () => {
+  initMapbox();
+})
