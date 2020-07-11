@@ -17,14 +17,18 @@ h5 {
 
 .containercontact {
   display: flex;
+  z-index:1;
 
 
 }
 
 .position  {
   margin-top: 300px;
+
+
 }
 
 #map {
-  z-index:0;
 }
+
+

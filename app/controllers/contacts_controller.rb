@@ -1,6 +1,14 @@
 class ContactsController < ApplicationController
   def new
     @contact = Contact.new
+    @maps = Map.geocoded # returns flats with coordinates
+
+    @markers = @maps.map do |map|
+      {
+        lat: map.latitude,
+        lng: map.longitude
+      }
+    end
   end
 
   def create
