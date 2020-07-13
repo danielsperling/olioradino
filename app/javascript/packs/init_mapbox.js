@@ -23,6 +23,7 @@ const initMapbox = () => {
       element.style.width = '25px';
       element.style.height = '25px';
 
+
       // Pass the element as an argument to the new marker
       new mapboxgl.Marker(element)
         .setLngLat([marker.lng, marker.lat])
@@ -32,7 +33,7 @@ const initMapbox = () => {
     const fitMapToMarkers = (map, markers) => {
       const bounds = new mapboxgl.LngLatBounds();
       markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
-      map.fitBounds(bounds, { padding: 70, maxZoom: 6, duration: 10000 });
+      map.fitBounds(bounds, { padding: 70, maxZoom: 6, duration: 6000 });
     };
 
     if (mapElement) {
