@@ -8,6 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Mapbox -->
+
+    <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'init_mapbox' %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+
 
 
     <!-- CSS only -->
@@ -25,17 +33,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- Mapbox -->
-    <script src="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.js"></script>
-    <link href="http://api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.css" rel="stylesheet" />
+
 
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
 
-    <!-- Mapbox -->
 
-    <%= javascript_pack_tag 'application' %>
-    <%= javascript_pack_tag 'init_mapbox' %>
 
 
     <!-- Mapbox -->
