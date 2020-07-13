@@ -6,7 +6,8 @@ class ContactsController < ApplicationController
     @markers = @maps.map do |map|
       {
         lat: map.latitude,
-        lng: map.longitude
+        lng: map.longitude,
+        image_url: helpers.asset_url('olive-oil.png')
       }
     end
   end
