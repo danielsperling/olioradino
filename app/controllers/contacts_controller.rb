@@ -6,7 +6,10 @@ class ContactsController < ApplicationController
     @markers = @maps.map do |map|
       {
         lat: map.latitude,
-        lng: map.longitude
+        lng: map.longitude,
+        name: map.name,
+        infoWindow: render_to_string(partial: "/contacts/map_box", locals: { map: map }),
+        image_url: helpers.asset_url('olive-oil.png')
       }
     end
   end
