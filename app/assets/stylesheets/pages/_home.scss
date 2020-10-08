@@ -4,7 +4,7 @@
   height: 700px;
   background: image_url("OliveTrees.jpeg");
   background-position: center;
-  background-size: 100%;
+  width: auto;
 }
 
 .map {
@@ -12,8 +12,7 @@
   height: 300px;
   background-attachment: fixed;
   margin-bottom: 70px;
-  background-position: center center;
-  background-size: 100%;
+  background-position: center;
   box-shadow: inset 0 0 1em #111;
   z-index: 1;
 }
