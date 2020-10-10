@@ -16,7 +16,7 @@
 //= require_tree .
 //= require jquery
 
-socket = io.listen(process.env.PORT);
+
 
 
 const navSlide = () => {
