@@ -1,66 +1,66 @@
-.topimage {
-  background: image_url("olivefield.jpg");
-  height: 450px;
-  background-position: center;
-}
+// .topimage {
+//   background: image_url("olivefield.jpg");
+//   height: 450px;
+//   background-position: center;
+// }
 
-.animated {
-  padding-top: 180px;
-  text-align: center;
-  font-size: 100px;
-  color: white;
-  font-weight: 700;
-  line-height: 2;
-  animation: fadeAndScale 1.25s ease-in;
-  text-shadow: 2px 3px 4px #666;
-}
+// .animated {
+//   padding-top: 180px;
+//   text-align: center;
+//   font-size: 100px;
+//   color: white;
+//   font-weight: 700;
+//   line-height: 2;
+//   animation: fadeAndScale 1.25s ease-in;
+//   text-shadow: 2px 3px 4px #666;
+// }
 
-@keyframes fadeAndScale {
-  from {
-    opacity: 0;
-    transform: scale3d(.75, .75, 1);
-  }
-  to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
+// @keyframes fadeAndScale {
+//   from {
+//     opacity: 0;
+//     transform: scale3d(.75, .75, 1);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: scale3d(1, 1, 1);
+//   }
+// }
 
-.title {
-  text-align: center;
-  padding-bottom: 25px;
-  font-family: 'Roboto', sans-serif;
+// .title {
+//   text-align: center;
+//   padding-bottom: 25px;
+//   font-family: 'Roboto', sans-serif;
 
-}
+// }
 
-.top, .bottom,  {
-  display: flex;
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-
-
-}
-
-h4 {
+// .top, .bottom,  {
+//   display: flex;
+//   margin-right: 50px;
+//   margin-left: 50px;
+//   margin-top: 25px;
+//   margin-bottom: 25px;
 
 
-  font-family: 'Roboto', sans-serif;
-}
+// }
 
-.topimg {
-  padding-top: 70px;
-  width: 500px;
-  height: 650px;
-  margin-right: 100px;
-  margin-left: 100px;
-  }
+// h4 {
 
-.bottomimg {
-  width: 500px;
-  height: 650px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
+
+//   font-family: 'Roboto', sans-serif;
+// }
+
+// .topimg {
+//   padding-top: 70px;
+//   width: 500px;
+//   height: 650px;
+//   margin-right: 100px;
+//   margin-left: 100px;
+//   }
+
+// .bottomimg {
+//   width: 500px;
+//   height: 650px;
+//   margin-right: 100px;
+//   margin-left: 100px;
+// }
 
