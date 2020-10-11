@@ -34,4 +34,15 @@ const navSlide = () => {
 }
 
 
+const navColor = () => {
+  const nav = document.querySelector('nav');
+  // change color
+  nav.addEventListener('scroll', () => {
+    nav.classList.toggle('nav-scroll');
+  });
+}
+
 navSlide();
+navColor();
+
+

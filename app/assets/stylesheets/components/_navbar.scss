@@ -131,6 +131,11 @@ nav{
   transform: translateX(0%);
 }
 
+.nav-scroll{
+  background-color: #222;
+  transition: background-color 200ms linear;
+}
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
