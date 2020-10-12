@@ -36,17 +36,32 @@ const navSlide = () => {
 
 const navColor = () => {
   const nav = document.querySelector('nav');
-  const atags = document.querySelector('.nav-links a')
-  const logo = document.querySelector('.logo h1')
   // change color
   window.addEventListener('scroll', () => {
     nav.classList.add('nav-scroll');
-    atags.classList.add('nav-links-scroll');
-    logo.classList.add('nav-logo-scroll');
+  });
+}
+
+
+const tagColor = () => {
+  const atags = document.querySelector('.nav-links li')
+  window.addEventListener('scroll', () => {
+    atags.classList.add('.nav-links-scroll');
+ });
+}
+
+const logoColor = () => {
+  const logo = document.querySelector('.logo h1')
+  window.addEventListener('scroll', () => {
+    logo.classList.add('.nav-logo-scroll');
   });
 }
 
 navSlide();
-navColor();
+logoColor();
+tagColor();
+// navColor();
+
+
 
 
