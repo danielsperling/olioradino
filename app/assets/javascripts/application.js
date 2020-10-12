@@ -36,9 +36,13 @@ const navSlide = () => {
 
 const navColor = () => {
   const nav = document.querySelector('nav');
+  const atags = document.querySelector('.nav-links a')
+  const logo = document.querySelector('.logo h1')
   // change color
-  nav.addEventListener('scroll', () => {
-    nav.classList.toggle('nav-scroll');
+  window.addEventListener('scroll', () => {
+    nav.classList.add('nav-scroll');
+    atags.classList.add('nav-links-scroll');
+    logo.classList.add('nav-logo-scroll');
   });
 }
 
