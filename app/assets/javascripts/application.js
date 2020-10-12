@@ -60,7 +60,7 @@ const logoColor = () => {
 navSlide();
 logoColor();
 tagColor();
-// navColor();
+navColor();
 
 
 
