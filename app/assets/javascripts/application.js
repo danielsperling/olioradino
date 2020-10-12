@@ -37,12 +37,31 @@ const navSlide = () => {
 const navColor = () => {
   const nav = document.querySelector('nav');
   // change color
-  nav.addEventListener('scroll', () => {
-    nav.classList.toggle('nav-scroll');
+  window.addEventListener('scroll', () => {
+    nav.classList.add('nav-scroll');
+  });
+}
+
+
+const tagColor = () => {
+  const atags = document.querySelector('.nav-links li')
+  window.addEventListener('scroll', () => {
+    atags.classList.add('.nav-links-scroll');
+ });
+}
+
+const logoColor = () => {
+  const logo = document.querySelector('.logo h1')
+  window.addEventListener('scroll', () => {
+    logo.classList.add('.nav-logo-scroll');
   });
 }
 
 navSlide();
+logoColor();
+tagColor();
 navColor();
+
+
 
 
