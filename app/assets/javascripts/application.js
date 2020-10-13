@@ -43,7 +43,6 @@ const navColor = () => {
     nav.classList.add('nav-scroll');
   });
   window.addEventListener('scroll', () => {
-    console.log('hello')
     logo.classList.add('logo-change-color')
   });
   navLinks.forEach((link) => {
@@ -57,27 +56,7 @@ const navColor = () => {
 
 
 navSlide();
-
 navColor();
 
 
-
-
-// const tagColor = () => {
-//   const atags = document.querySelector('.nav-links li')
-//   window.addEventListener('scroll', () => {
-//     atags.classList.add('.nav-links-scroll');
-//  });
-// }
-
-// const logoColor = () => {
-//   const logo = document.querySelector('.logo h1')
-//   window.addEventListener('scroll', () => {
-//     logo.classList.add('.nav-logo-scroll');
-//   });
-// }
-
-
-// logoColor();
-// tagColor();
 

@@ -17,7 +17,7 @@ nav{
   text-transform: uppercase;
   font-size: 35px;
   // color: rgb(226, 226, 226);
-  // color: #222;
+  color: #222;
 }
 
 
@@ -42,7 +42,7 @@ nav{
   padding-right: 25px;
   align-self: center;
   height: 40px;
-  // color: #222;
+  color: #222;
 }
 
 
@@ -65,11 +65,11 @@ nav{
 
 .logo-change-color{
   // background-color: rgb(226, 226, 266);
-  color: rgb(226,226,226);
+  color: rgb(226,226,226) !important;
 }
 
 .links-change-color{
-  color: rgb(226,226,226);
+  color: rgb(226,226,226) !important;
 }
 // SCROLLING EFFECT
 
