@@ -38,13 +38,15 @@ const navColor = () => {
   const nav = document.querySelector('nav');
   const logo = document.querySelector('.logo h1')
   const navLinks = document.querySelectorAll('.nav-links a');
-  // change color
+  // change color nav
   window.addEventListener('scroll', () => {
     nav.classList.add('nav-scroll');
   });
+  // change color logo
   window.addEventListener('scroll', () => {
     logo.classList.add('logo-change-color')
   });
+  // change color nav atags
   navLinks.forEach((link) => {
     window.addEventListener('scroll', () => {
       link.classList.add('links-change-color')
@@ -52,11 +54,36 @@ const navColor = () => {
   });
 }
 
-
-
-
 navSlide();
-navColor();
+// navColor();
 
+
+
+
+
+// -------------- JS navbar scroll effect whole -----------
+  function toggleScrollClass() {
+  var nav = document.querySelectorAll('nav')[0];
+  window.pageYOffset > 0 ? nav.classList.add('nav-scroll') : nav.classList.remove('nav-scroll')
+}
+const navColour = () => {
+
+window.addEventListener('scroll', function() {toggleScrollClass()});
+toggleScrollClass();
+}
+
+function toggleScrollColor() {
+  var logo = document.querySelector('.logo h1');
+  window.pageYOffset > 0 ? logo.classList.add('logo-change-color') : logo.classList.remove('logo-change-color')
+}
+
+const logoColour = () => {
+
+  window.addEventListener('scroll', function() {toggleScrollColor()});
+  toggleScrollColor();
+}
+
+navColour();
+logoColour();
 
 
