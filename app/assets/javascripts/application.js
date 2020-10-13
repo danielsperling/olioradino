@@ -34,35 +34,11 @@ const navSlide = () => {
 }
 
 
-const navColor = () => {
-  const nav = document.querySelector('nav');
-  const logo = document.querySelector('.logo h1')
-  const navLinks = document.querySelectorAll('.nav-links a');
-  // change color nav
-  window.addEventListener('scroll', () => {
-    nav.classList.add('nav-scroll');
-  });
-  // change color logo
-  window.addEventListener('scroll', () => {
-    logo.classList.add('logo-change-color')
-  });
-  // change color nav atags
-  navLinks.forEach((link) => {
-    window.addEventListener('scroll', () => {
-      link.classList.add('links-change-color')
-    });
-  });
-}
-
-navSlide();
-// navColor();
+// -------------- JS navbar scroll effect for changing color of navbar/logo/links when scroll up or down -----------
 
 
-
-
-
-// -------------- JS navbar scroll effect whole -----------
-  function toggleScrollClass() {
+// --------------Nav Bar Color Change------
+function toggleScrollClass() {
   var nav = document.querySelectorAll('nav')[0];
   window.pageYOffset > 0 ? nav.classList.add('nav-scroll') : nav.classList.remove('nav-scroll')
 }
@@ -72,18 +48,66 @@ window.addEventListener('scroll', function() {toggleScrollClass()});
 toggleScrollClass();
 }
 
-function toggleScrollColor() {
+// --------- Logo Color change----------
+
+function toggleScrollLogo() {
   var logo = document.querySelector('.logo h1');
   window.pageYOffset > 0 ? logo.classList.add('logo-change-color') : logo.classList.remove('logo-change-color')
 }
-
 const logoColour = () => {
 
-  window.addEventListener('scroll', function() {toggleScrollColor()});
-  toggleScrollColor();
+  window.addEventListener('scroll', function() {toggleScrollLogo()});
+  toggleScrollLogo();
+}
+// -------------------------------------
+
+
+function toogleScrollLinks() {
+  var links = document.querySelectorAll('.nav-links a')
+  links.forEach((link) => {
+     window.pageYOffset > 0 ? link.classList.add('links-change-color') : link.classList.remove('links-change-color')
+   });
 }
 
+const linksColour = () => {
+
+ window.addEventListener('scroll', function() {toogleScrollLinks()});
+ toogleScrollLinks();
+}
+
+
+
+navSlide();
 navColour();
 logoColour();
+linksColour();
 
+
+
+// old js scroll effect, only works when scrolling down
+
+
+
+// const navColor = () => {
+//   const nav = document.querySelector('nav');
+//   const logo = document.querySelector('.logo h1')
+//   const navLinks = document.querySelectorAll('.nav-links a');
+//   // change color nav
+//   window.addEventListener('scroll', () => {
+//     nav.classList.add('nav-scroll');
+//   });
+//   // change color logo
+//   window.addEventListener('scroll', () => {
+//     logo.classList.add('logo-change-color')
+//   });
+//   // change color nav atags
+//   navLinks.forEach((link) => {
+//     window.addEventListener('scroll', () => {
+//       link.classList.add('links-change-color')
+//     });
+//   });
+// }
+
+
+// navColor();
 

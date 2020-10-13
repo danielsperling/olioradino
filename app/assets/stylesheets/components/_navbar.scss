@@ -61,18 +61,19 @@ nav{
 // -----------------------------------
 // SCROLLING EFFECT
 .nav-scroll{
-  background-color: #222;
-  transition: background-color 300ms linear;
+  background-color: rgba(34, 34, 34, 0.7);
+  transition: background-color 500ms linear;
 }
 
 .logo-change-color{
   // background-color: rgb(226, 226, 266);
   color: rgb(226,226,226) !important;
-  transition: background-color 300ms linear;
+  transition: color 500ms linear;
 }
 
 .links-change-color{
   color: rgb(226,226,226) !important;
+  transition: color 500ms linear;
 }
 // SCROLLING EFFECT
 // -------------------------------------
