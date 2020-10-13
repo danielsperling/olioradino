@@ -36,32 +36,48 @@ const navSlide = () => {
 
 const navColor = () => {
   const nav = document.querySelector('nav');
+  const logo = document.querySelector('.logo h1')
+  const navLinks = document.querySelectorAll('.nav-links a');
   // change color
   window.addEventListener('scroll', () => {
     nav.classList.add('nav-scroll');
   });
-}
-
-
-const tagColor = () => {
-  const atags = document.querySelector('.nav-links li')
   window.addEventListener('scroll', () => {
-    atags.classList.add('.nav-links-scroll');
- });
-}
-
-const logoColor = () => {
-  const logo = document.querySelector('.logo h1')
-  window.addEventListener('scroll', () => {
-    logo.classList.add('.nav-logo-scroll');
+    console.log('hello')
+    logo.classList.add('logo-change-color')
+  });
+  navLinks.forEach((link) => {
+    window.addEventListener('scroll', () => {
+      link.classList.add('links-change-color')
+    });
   });
 }
 
+
+
+
 navSlide();
-logoColor();
-tagColor();
+
 navColor();
 
 
 
+
+// const tagColor = () => {
+//   const atags = document.querySelector('.nav-links li')
+//   window.addEventListener('scroll', () => {
+//     atags.classList.add('.nav-links-scroll');
+//  });
+// }
+
+// const logoColor = () => {
+//   const logo = document.querySelector('.logo h1')
+//   window.addEventListener('scroll', () => {
+//     logo.classList.add('.nav-logo-scroll');
+//   });
+// }
+
+
+// logoColor();
+// tagColor();
 
