@@ -30,12 +30,24 @@
 }
 
 .about{
-  border:1px solid yellow;
-  background-color: yellow;
   display:flex;
   flex-direction:column;
   width: 50%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 50px;
+}
 
+.about p{
+  font-size: 25px;
+}
+
+.about h1{
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #A5BA8C;
 }
 
 .image{
@@ -43,7 +55,8 @@
   display:flex;
   flex-direction:column;
   width: 50%;
-  background: url("familgia.jpeg")
+  background: url("familgia.jpg");
+  background-size: cover;
 }
 
 
