@@ -34,7 +34,14 @@ var navSlider = () => {
 }
 
 
+
+
 // -------------- JS navbar scroll effect for changing color of navbar/logo/links when scroll up or down -----------
+
+
+
+
+
 
 
 // --------------Nav Bar Color Change------
@@ -47,6 +54,9 @@ var navColour = () => {
 window.addEventListener('scroll', function() {toggleScrollClass()});
 toggleScrollClass();
 }
+
+
+
 
 // --------- Logo Color change----------
 
@@ -62,6 +72,10 @@ var logoColour = () => {
 // -------------------------------------
 
 
+
+
+// --------- NavLinks change----------
+
 function toogleScrollLinks() {
   var links = document.querySelectorAll('.nav-links a')
   links.forEach((link) => {
@@ -75,11 +89,18 @@ var linksColour = () => {
  toogleScrollLinks();
 }
 
+// -------------------------------------
+
+
+
+
+
+
 // ---------------Hide Backgroudn Color Nav after scrolling----------------------
 
 function hideNavOffset() {
   var navb = document.querySelectorAll('nav')[0];
-    if(window.pageYOffset > 250) {
+    if(window.pageYOffset > 1500) {
       navb.classList.add('nav-hide')
     }
 }
@@ -94,7 +115,7 @@ var hideNav = () => {
 
 function hideLogoOffset() {
   var logo = document.querySelector('.logo h1');
-    if(window.pageYOffset > 250) {
+    if(window.pageYOffset > 1500) {
       logo.classList.add('logo-hide')
     }
 }
@@ -107,22 +128,29 @@ var hideLogo = () => {
 
 // ---------------Hide Nav Links after scrolling----------------------
 
-function hideLogoOffset() {
-  var logo = document.querySelector('.logo h1');
-    if(window.pageYOffset > 250) {
-      logo.classList.add('logo-hide')
+function hideLinkOffset() {
+  var links = document.querySelectorAll('.nav-links a')
+  links.forEach((link) => {
+    if(window.pageYOffset > 1500) {
+      link.classList.add('logo-hide')
     }
+  });
 }
 
-var hideLogo = () => {
+var hideNavLink = () => {
 
-  window.addEventListener('scroll', function() {hideLogoOffset()});
-  hideLogoOffset();
+  window.addEventListener('scroll', function() {hideLinkOffset()});
+  hideLinkOffset();
 }
+
+
+
+
 
 
 hideLogo();
 hideNav();
+hideNavLink();
 
 navSlider();
 navColour();
