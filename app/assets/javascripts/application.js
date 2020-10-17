@@ -19,7 +19,7 @@
 
 
 
-const navSlide = () => {
+var navSlider = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
@@ -42,7 +42,7 @@ function toggleScrollClass() {
   var nav = document.querySelectorAll('nav')[0];
   window.pageYOffset > 0 ? nav.classList.add('nav-scroll') : nav.classList.remove('nav-scroll')
 }
-const navColour = () => {
+var navColour = () => {
 
 window.addEventListener('scroll', function() {toggleScrollClass()});
 toggleScrollClass();
@@ -54,7 +54,7 @@ function toggleScrollLogo() {
   var logo = document.querySelector('.logo h1');
   window.pageYOffset > 0 ? logo.classList.add('logo-change-color') : logo.classList.remove('logo-change-color')
 }
-const logoColour = () => {
+var logoColour = () => {
 
   window.addEventListener('scroll', function() {toggleScrollLogo()});
   toggleScrollLogo();
@@ -69,18 +69,39 @@ function toogleScrollLinks() {
    });
 }
 
-const linksColour = () => {
+var linksColour = () => {
 
  window.addEventListener('scroll', function() {toogleScrollLinks()});
  toogleScrollLinks();
 }
 
+// -------------------------------------
+
+function hideNavOffset() {
+  var navb = document.querySelectorAll('nav')[0];
+    if(window.pageYOffset > 250) {
+      console.log('hello')
+      navb.classList.remove('nav-hide')
+    }
+}
+
+var hideNav = () => {
+
+  window.addEventListener('scroll', function() {hideNavOffset()});
+  hideNavOffset();
+}
 
 
-navSlide();
+
+
+
+
+hideNav();
+navSlider();
 navColour();
 logoColour();
 linksColour();
+
 
 
 
