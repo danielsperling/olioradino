@@ -1,66 +1,31 @@
-// .topimage {
-//   background: image_url("olivefield.jpg");
-//   height: 450px;
-//   background-position: center;
-// }
-
-// .animated {
-//   padding-top: 180px;
-//   text-align: center;
-//   font-size: 100px;
-//   color: white;
-//   font-weight: 700;
-//   line-height: 2;
-//   animation: fadeAndScale 1.25s ease-in;
-//   text-shadow: 2px 3px 4px #666;
-// }
-
-// @keyframes fadeAndScale {
-//   from {
-//     opacity: 0;
-//     transform: scale3d(.75, .75, 1);
-//   }
-//   to {
-//     opacity: 1;
-//     transform: scale3d(1, 1, 1);
-//   }
-// }
-
-// .title {
-//   text-align: center;
-//   padding-bottom: 25px;
-//   font-family: 'Roboto', sans-serif;
-
-// }
-
-// .top, .bottom,  {
-//   display: flex;
-//   margin-right: 50px;
-//   margin-left: 50px;
-//   margin-top: 25px;
-//   margin-bottom: 25px;
+.aboutimg{
+  background-image: url(aboutusimg.jpeg);
+  height: 100vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
 
 
-// }
+.abouttext{
+  max-width: 100%;
+  height: 600px;
+  display:flex;
+  position: relative;
+  padding-left: 400px;
+  padding-right: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
 
-// h4 {
+.abouttext p{
+  font-size: 20px;
+  padding-top: 70px;
+}
 
-
-//   font-family: 'Roboto', sans-serif;
-// }
-
-// .topimg {
-//   padding-top: 70px;
-//   width: 500px;
-//   height: 650px;
-//   margin-right: 100px;
-//   margin-left: 100px;
-//   }
-
-// .bottomimg {
-//   width: 500px;
-//   height: 650px;
-//   margin-right: 100px;
-//   margin-left: 100px;
-// }
-
+.abouttext h1{
+  padding-top: 100px;
+}
