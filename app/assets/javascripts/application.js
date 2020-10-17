@@ -126,6 +126,24 @@ var hideLogo = () => {
   hideLogoOffset();
 }
 
+//  Show Logo  - - - - - -
+
+
+function showLogoOffset() {
+  var logo = document.querySelector('.logo h1');
+    if(window.pageYOffset < 1499) {
+      logo.classList.remove('logo-hide')
+    }
+}
+
+var showLogo = () => {
+
+  window.addEventListener('scroll', function() {showLogoOffset()});
+  showLogoOffset();
+}
+
+//  ----------------------------------------------------------------
+
 // ---------------Hide Nav Links after scrolling----------------------
 
 function hideLinkOffset() {
@@ -143,10 +161,26 @@ var hideNavLink = () => {
   hideLinkOffset();
 }
 
+//  Show Nav Links - - - - - -
 
+function showLinkOffset() {
+  var links = document.querySelectorAll('.nav-links a')
+  links.forEach((link) => {
+    if(window.pageYOffset < 1499) {
+      link.classList.remove('logo-hide')
+    }
+  });
+}
 
+var showNavLink = () => {
 
+  window.addEventListener('scroll', function() {showLinkOffset()});
+  showLinkOffset();
+}
+//  ----------------------------------------------------------------
 
+showNavLink();
+showLogo();
 
 hideLogo();
 hideNav();
