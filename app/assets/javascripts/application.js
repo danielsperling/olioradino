@@ -81,7 +81,7 @@ function hideNavOffset() {
   var navb = document.querySelectorAll('nav')[0];
     if(window.pageYOffset > 250) {
       console.log('hello')
-      navb.classList.remove('nav-hide')
+      navb.classList.add('nav-hide')
     }
 }
 
