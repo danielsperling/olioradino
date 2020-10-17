@@ -95,8 +95,7 @@ var linksColour = () => {
 
 
 
-
-// ---------------Hide Backgroudn Color Nav after scrolling----------------------
+// ---------------Hide Background Color Nav after scrolling-------
 
 function hideNavOffset() {
   var navb = document.querySelectorAll('nav')[0];
@@ -110,6 +109,26 @@ var hideNav = () => {
   window.addEventListener('scroll', function() {hideNavOffset()});
   hideNavOffset();
 }
+
+//  ---Show background - - - - - -
+
+function showNavOffset() {
+  var navb = document.querySelectorAll('nav')[0];
+    if(window.pageYOffset < 1499) {
+      navb.classList.remove('nav-hide')
+    }
+}
+
+var showNav = () => {
+
+  window.addEventListener('scroll', function() {showNavOffset()});
+  showNavOffset();
+}
+// ------------------------------------------------------------------
+
+
+
+
 
 // ---------------Hide Logo Nav after scrolling----------------------
 
@@ -142,7 +161,11 @@ var showLogo = () => {
   showLogoOffset();
 }
 
-//  ----------------------------------------------------------------
+//  -----------------------------------------------------------------
+
+
+
+
 
 // ---------------Hide Nav Links after scrolling----------------------
 
@@ -179,13 +202,22 @@ var showNavLink = () => {
 }
 //  ----------------------------------------------------------------
 
-showNavLink();
-showLogo();
 
+
+
+
+
+// Hide Navbar after 1500px
 hideLogo();
 hideNav();
 hideNavLink();
 
+// Show Navbar after scrolling up 1499px
+showNavLink();
+showLogo();
+showNav();
+
+// Navbar effects
 navSlider();
 navColour();
 logoColour();
