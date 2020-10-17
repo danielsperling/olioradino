@@ -19,7 +19,7 @@
 
 
 
-const navSlide = () => {
+var navSlider = () => {
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.nav-links');
   const navLinks = document.querySelectorAll('.nav-links li');
@@ -34,7 +34,14 @@ const navSlide = () => {
 }
 
 
+
+
 // -------------- JS navbar scroll effect for changing color of navbar/logo/links when scroll up or down -----------
+
+
+
+
+
 
 
 // --------------Nav Bar Color Change------
@@ -42,11 +49,14 @@ function toggleScrollClass() {
   var nav = document.querySelectorAll('nav')[0];
   window.pageYOffset > 0 ? nav.classList.add('nav-scroll') : nav.classList.remove('nav-scroll')
 }
-const navColour = () => {
+var navColour = () => {
 
 window.addEventListener('scroll', function() {toggleScrollClass()});
 toggleScrollClass();
 }
+
+
+
 
 // --------- Logo Color change----------
 
@@ -54,13 +64,17 @@ function toggleScrollLogo() {
   var logo = document.querySelector('.logo h1');
   window.pageYOffset > 0 ? logo.classList.add('logo-change-color') : logo.classList.remove('logo-change-color')
 }
-const logoColour = () => {
+var logoColour = () => {
 
   window.addEventListener('scroll', function() {toggleScrollLogo()});
   toggleScrollLogo();
 }
 // -------------------------------------
 
+
+
+
+// --------- NavLinks change----------
 
 function toogleScrollLinks() {
   var links = document.querySelectorAll('.nav-links a')
@@ -69,18 +83,146 @@ function toogleScrollLinks() {
    });
 }
 
-const linksColour = () => {
+var linksColour = () => {
 
  window.addEventListener('scroll', function() {toogleScrollLinks()});
  toogleScrollLinks();
 }
 
+// -------------------------------------
 
 
-navSlide();
+
+
+
+// ---------------Hide Background Color Nav after scrolling-------
+
+function hideNavOffset() {
+  var navb = document.querySelectorAll('nav')[0];
+    if(window.pageYOffset > 1500) {
+      navb.classList.add('nav-hide')
+    }
+}
+
+var hideNav = () => {
+
+  window.addEventListener('scroll', function() {hideNavOffset()});
+  hideNavOffset();
+}
+
+//  ---Show background - - - - - -
+
+function showNavOffset() {
+  var navb = document.querySelectorAll('nav')[0];
+    if(window.pageYOffset < 1499) {
+      navb.classList.remove('nav-hide')
+    }
+}
+
+var showNav = () => {
+
+  window.addEventListener('scroll', function() {showNavOffset()});
+  showNavOffset();
+}
+// ------------------------------------------------------------------
+
+
+
+
+
+// ---------------Hide Logo Nav after scrolling----------------------
+
+function hideLogoOffset() {
+  var logo = document.querySelector('.logo h1');
+    if(window.pageYOffset > 1500) {
+      logo.classList.add('logo-hide')
+    }
+}
+
+var hideLogo = () => {
+
+  window.addEventListener('scroll', function() {hideLogoOffset()});
+  hideLogoOffset();
+}
+
+//  Show Logo  - - - - - -
+
+
+function showLogoOffset() {
+  var logo = document.querySelector('.logo h1');
+    if(window.pageYOffset < 1499) {
+      logo.classList.remove('logo-hide')
+    }
+}
+
+var showLogo = () => {
+
+  window.addEventListener('scroll', function() {showLogoOffset()});
+  showLogoOffset();
+}
+
+//  -----------------------------------------------------------------
+
+
+
+
+
+// ---------------Hide Nav Links after scrolling----------------------
+
+function hideLinkOffset() {
+  var links = document.querySelectorAll('.nav-links a')
+  links.forEach((link) => {
+    if(window.pageYOffset > 1500) {
+      link.classList.add('logo-hide')
+    }
+  });
+}
+
+var hideNavLink = () => {
+
+  window.addEventListener('scroll', function() {hideLinkOffset()});
+  hideLinkOffset();
+}
+
+//  Show Nav Links - - - - - -
+
+function showLinkOffset() {
+  var links = document.querySelectorAll('.nav-links a')
+  links.forEach((link) => {
+    if(window.pageYOffset < 1499) {
+      link.classList.remove('logo-hide')
+    }
+  });
+}
+
+var showNavLink = () => {
+
+  window.addEventListener('scroll', function() {showLinkOffset()});
+  showLinkOffset();
+}
+//  ----------------------------------------------------------------
+
+
+
+
+
+
+// Hide Navbar after 1500px
+hideLogo();
+hideNav();
+hideNavLink();
+
+// Show Navbar after scrolling up 1499px
+showNavLink();
+showLogo();
+showNav();
+
+// Navbar effects
+navSlider();
 navColour();
 logoColour();
 linksColour();
+
 
 
 
