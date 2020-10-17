@@ -75,12 +75,11 @@ var linksColour = () => {
  toogleScrollLinks();
 }
 
-// -------------------------------------
+// ---------------Hide Backgroudn Color Nav after scrolling----------------------
 
 function hideNavOffset() {
   var navb = document.querySelectorAll('nav')[0];
     if(window.pageYOffset > 250) {
-      console.log('hello')
       navb.classList.add('nav-hide')
     }
 }
@@ -91,12 +90,40 @@ var hideNav = () => {
   hideNavOffset();
 }
 
+// ---------------Hide Logo Nav after scrolling----------------------
+
+function hideLogoOffset() {
+  var logo = document.querySelector('.logo h1');
+    if(window.pageYOffset > 250) {
+      logo.classList.add('logo-hide')
+    }
+}
+
+var hideLogo = () => {
+
+  window.addEventListener('scroll', function() {hideLogoOffset()});
+  hideLogoOffset();
+}
+
+// ---------------Hide Nav Links after scrolling----------------------
+
+function hideLogoOffset() {
+  var logo = document.querySelector('.logo h1');
+    if(window.pageYOffset > 250) {
+      logo.classList.add('logo-hide')
+    }
+}
+
+var hideLogo = () => {
+
+  window.addEventListener('scroll', function() {hideLogoOffset()});
+  hideLogoOffset();
+}
 
 
-
-
-
+hideLogo();
 hideNav();
+
 navSlider();
 navColour();
 logoColour();
