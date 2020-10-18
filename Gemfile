@@ -42,7 +42,6 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'sendgrid-ruby'
-gem 'webpacker', '~> 5.x'
 gem 'geocoder'
 
 group :development, :test do
