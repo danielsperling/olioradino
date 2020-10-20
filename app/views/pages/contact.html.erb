@@ -1,1 +1,16 @@
-<h1> This is the Contact page </h1>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<div class="position">
+  <div id="map"
+
+       style="width: 500px; height: 350px;"
+       data-markers="<%= @markers.to_json %>"
+
+       data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+</div>
