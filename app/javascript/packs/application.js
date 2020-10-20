@@ -24,3 +24,6 @@ console.log('Hello World from Webpacker')
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
 })
+
+
+initMapbox();

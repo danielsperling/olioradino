@@ -1,4 +1,5 @@
 import mapboxgl from 'mapbox-gl';
+import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
 
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
