@@ -1,27 +1,15 @@
-import 'mapbox-gl/dist/mapbox-gl.css'
-import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
+// import mapboxgl from 'mapbox-gl';
 
+// const initMapbox = () => {
+//   const mapElement = document.getElementById('map');
 
-console.log("custom js file loaded")
-const initMapbox = () => {
-  const mapElement = document.getElementById('map');
+//   if (mapElement) { // only build a map if there's a div#map to inject into
+//     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
+//     var map = new mapboxgl.Map({
+//       container: 'map',
+//       style: 'mapbox://styles/danielsperling/ckcf4r1dn17kd1inyikg0gzth'
 
-  if (mapElement) { // only build a map if there's a div#map to inject into
-    mapboxgl.accessToken = process.env.MAPBOX_API_KEY;
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/danielsperling/ckcf4r1dn17kd1inyikg0gzth'
-
-    });
-  }
-
-
-    // mapElement.dataset.mapboxApiKey;
-
-
-
-
-
+//     });
 //     const markers = JSON.parse(mapElement.dataset.markers);
 
 //     markers.forEach((marker) => {
@@ -60,4 +48,4 @@ const initMapbox = () => {
 
 
 
-export { initMapbox };
+// export { initMapbox };
