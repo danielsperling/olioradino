@@ -1,4 +1,4 @@
-import { initMapbox } from 'packs/init_mapbox';
+
 
 
 /* eslint no-console:0 */
@@ -21,9 +21,16 @@ import { initMapbox } from 'packs/init_mapbox';
 console.log('Hello World from Webpacker')
 
 
-document.addEventListener('turbolinks:load', () => {
-  initMapbox();
-})
 
 
-initMapbox();
+
+
+
+
+// MapBox Dont work
+// document.addEventListener('turbolinks:load', () => {
+//   initMapbox();
+// })
+
+// import { initMapbox } from 'packs/map';
+// require("packs/map");

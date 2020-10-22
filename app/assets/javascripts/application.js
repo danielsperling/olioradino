@@ -207,6 +207,7 @@ var showNavLink = () => {
 
 
 
+
 // Hide Navbar after 1500px
 hideLogo();
 hideNav();
