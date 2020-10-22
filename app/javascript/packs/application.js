@@ -1,4 +1,5 @@
-import { initMapbox } from 'packs/init_mapbox';
+import { initMapbox } from 'packs/map';
+require("packs/map");
 
 
 /* eslint no-console:0 */
@@ -25,5 +26,3 @@ document.addEventListener('turbolinks:load', () => {
   initMapbox();
 })
 
-
-initMapbox();
