@@ -3,16 +3,6 @@
 <br>
 <br>
 
-
-<!--   <div id="map"
-
-       style="width: 500px; height: 350px;"
-       data-markers="<%#= @markers.to_json %>"
-
-
-  </div> -->
-
-
   <div id='map' ></div>
   <script>
 
@@ -20,6 +10,7 @@
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/danielsperling/ckcf4r1dn17kd1inyikg0gzth'
+
     });
 
 
@@ -30,7 +21,7 @@
         type: 'Feature',
         geometry: {
           type: 'Point',
-          coordinates: [37.9908997,23.7033199]
+          coordinates: [15.672, 40.975]
         },
         properties: {
           title: 'Mapbox',
@@ -49,9 +40,16 @@
       // make a marker for each feature and add to the map
       new mapboxgl.Marker(el)
         .setLngLat(marker.geometry.coordinates)
+
         .addTo(map);
-    });
+
+
+
+});
+
+
 
 
 
 </script>
+
