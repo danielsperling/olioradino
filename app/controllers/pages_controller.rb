@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     respond_to do |format|
       if @contact.deliver
         # re-initialize Home object for cleared form
-        @contact = Home.new
+        @contact = Page.new
         format.html { render 'index'}
         format.js   { flash.now[:success] = @message = "Thank you for your message. I'll get back to you soon!" }
       else
