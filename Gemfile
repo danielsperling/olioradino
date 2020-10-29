@@ -28,7 +28,6 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'jquery-rails'
 
-gem 'mailjet'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
