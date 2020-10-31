@@ -3,7 +3,7 @@
 .container{
   max-width: 100%;
   height: 100vh;
-  background: url("backgroundnew.jpeg") no-repeat center center fixed;
+  background: url("olivebranch.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,10 +38,14 @@
   padding-right: 150px;
   align-items: center;
   justify-content: center;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .about p{
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -50,6 +54,8 @@
   font-weight: bold;
   letter-spacing: 2px;
   color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .image{
@@ -74,6 +80,8 @@
   transition: 0.5s ease;
   letter-spacing: 1px;
   margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .button:hover{
@@ -82,15 +90,19 @@
   background: #222;
   border-radius: 4px;
   letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 a.button {
   text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .container2{
   max-width: 100%;
-  height: 350px;
+  height: 300px;
   background-color: #222;
   padding: 8px 24px;
 }
@@ -100,12 +112,16 @@ a.button {
   text-align: center;
   padding-right: 500px;
   padding-left: 500px;
-  font-size: 25px;
+  font-size: 22px;
   padding-top: 70px;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .snip{
   color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 
@@ -136,6 +152,7 @@ a.button {
   padding-right: 150px;
   align-items: center;
   justify-content: center;
+
 }
 
 .about1 h1{
@@ -143,8 +160,12 @@ a.button {
   font-weight: bold;
   letter-spacing: 2px;
   color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .about1 p{
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
 }
