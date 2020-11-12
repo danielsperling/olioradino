@@ -2,9 +2,11 @@
   "name": "olioradino",
   "private": true,
   "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1",
     "@rails/webpacker": "^5.2.1",
     "babel-loader": "^8.1.0",
     "bootstrap": "^4.5.0",
+    "contentful": "^7.14.8",
     "jquery": "^3.5.1",
     "jquery-parallax.js": "^1.5.0",
     "mapbox-gl": "^1.12.0",
